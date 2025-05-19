@@ -678,35 +678,42 @@ section h2::after {
     height: 100px !important;
     width: var(--gif-width) !important;
   }
-/* ——————— Brick strips above/below header ——————— */
+/* ——————— Brick strips above/below nav ——————— */
+.brick-strip {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
 .brick-strip.thin {
-  background: url('https://i.imgur.com/JHiiSW4.png') center center repeat-x;
-  background-size: auto 40px;  /* change 40px to whatever strip height you like */
-  height: 40px;                /* same as background-size height */
+  height: 40px;   /* adjust to taste */
+  background: url('https://i.imgur.com/JHiiSW4.png') center center repeat-x !important;
+  background-size: auto 40px !important;
 }
 
 /* ——————— Brick-background nav ——————— */
-.brick-nav {
-  background: url('https://i.imgur.com/JHiiSW4.png') center center repeat;
-  background-size: cover;       /* fill the full nav height */
-  display: flex;
+nav.brick-nav {
+  width: 100%;
+  display: flex !important;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 1rem;
-  border-top: 2px solid var(--brand-teal);
+  background: url('https://i.imgur.com/JHiiSW4.png') center center repeat !important;
+  background-size: cover !important;
+  border-top:    2px solid var(--brand-teal);
   border-bottom: 2px solid var(--brand-teal);
+  box-sizing: border-box;
+  margin: 0;
 }
 
-.brick-nav .nav-item {
-  flex: 1;
-}
+.brick-nav .nav-item { flex: 1; }
 
 .brick-nav .nav-left   { text-align: left;  }
 .brick-nav .nav-center { text-align: center; }
 .brick-nav .nav-right  { text-align: right; }
 
 .brick-nav a {
-  color: #fff;
+  color: #ffffff !important;
   font-family: 'Bebas Neue', sans-serif;
   font-size: 1.4rem;
   text-transform: uppercase;
@@ -719,13 +726,11 @@ section h2::after {
   font-size: 1.2rem;
   vertical-align: middle;
 }
-/* bump up font-sizes on desktop if you like */
-@media (min-width: 900px) {
-  .brick-nav a {
-    font-size: 2rem;
-  }
-}
 
+/* enlarge on desktop */
+@media (min-width: 900px) {
+  .brick-nav a { font-size: 2rem; }
+}
 
 
 
