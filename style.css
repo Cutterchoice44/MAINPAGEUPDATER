@@ -737,18 +737,31 @@ section h2::after {
   #main-nav a { font-size: 2rem !important; }
 }
   
-/* 1) Base teal “Remove show” buttons */
+/* 1) Any <button> inside the archive list */
 #mixcloud-list button {
   background-color: #5A8785 !important;
   border:           1px solid #5A8785 !important;
   color:            #fff     !important;
 }
 
-/* 2) Slightly darker teal on hover */
-#mixcloud-list button:hover {
+/* 2) Any link with class .remove-link inside the archive list */
+#mixcloud-list .remove-link {
+  background-color: #5A8785 !important;
+  border:           1px solid #5A8785 !important;
+  color:            #fff     !important;
+  display:          inline-block;
+  padding:          0.3rem 0.6rem;
+  border-radius:    4px;
+  text-decoration:  none !important;
+}
+
+/* 3) Hover state for both */
+#mixcloud-list button:hover,
+#mixcloud-list .remove-link:hover {
   background-color: #4e7573 !important;
   border-color:     #4e7573 !important;
 }
+
 
 
 
