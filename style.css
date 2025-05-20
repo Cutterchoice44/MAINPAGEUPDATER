@@ -196,8 +196,10 @@ section h2 {
 .live-player {
   background: #000;
   border: 2px solid var(--brand-teal);
-  border-radius
-  padding: 0.5rem;
+-  border-radius
+-  padding: 0.5rem;
++  border-radius: 6px;
++  padding: 0.5rem;
   text-align: center;
 }
 .live-player iframe,
@@ -734,7 +736,11 @@ section h2::after {
 @media (min-width: 900px) {
   #main-nav a { font-size: 2rem !important; }
 }
-
+  
+#mixcloud-list button:hover {
+  background: #4e7573 !important;
+  border-color: #4e7573 !important;
+}
 
 
 
