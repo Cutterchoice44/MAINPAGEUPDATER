@@ -196,7 +196,7 @@ section h2 {
 .live-player {
   background: #000;
   border: 2px solid var(--brand-teal);
-  border-radius: 6px; /*
+  border-radius
   padding: 0.5rem;
   text-align: center;
 }
@@ -703,7 +703,7 @@ section h2::after {
   align-items: center;
   padding: 0.5rem 1rem;
   background: url('https://i.imgur.com/JHiiSW4.png') center center repeat !important;
-  background-size: cover !important;
+  background-size: auto 80px; 
   border-top:    2px solid var(--brand-teal);
   border-bottom: 2px solid var(--brand-teal);
 }
