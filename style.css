@@ -196,7 +196,7 @@ section h2 {
 .live-player {
   background: #000;
   border: 2px solid var(--brand-teal);
-  border-radius: 6px;    /*
+  border-radius: 6px; /*
   padding: 0.5rem;
   text-align: center;
 }
